@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="grid place-items-center h-dvh">
+        <img class="shadow-2xl border rounded-xl w-[90dvw]" src="./ultahwpuke9.png" alt="ULTAH WPU Ke-9">
+        <audio src="./song.mp3" class="sr-only"></audio>
+        <div class="fixed inset-0 bg-black flex flex-col justify-center items-center gap-10 transition-all duration-700">
+            <h1 class="text-white text-5xl font-black">Selamat Ulang Tahun WPU Yang Ke-9</h1>
+            <button class="bg-zinc-800 text-white text-2xl py-4 px-16 uppercase rounded-md">Play</button>
+        </div>
+        <script>
+            document.querySelector('button').addEventListener('click', () => {
+                const div = document.querySelector('div')
+                const audio = document.querySelector('audio')
+                div.classList.add('translate-y-full')
+                audio.play()
+            })
+        </script>
+    </body>
+</html>
